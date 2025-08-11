@@ -1,0 +1,12 @@
+// Exporta uma constante chamada "ordensDeProdução"
+//que é um array de objetos
+//cada objeto representa uma ordem com id, nome do produto e seu status
+
+export const ordensDeProdução = [
+  { id: 1, produto: "Motor Elétrico", status: "Em andamento" },
+  { id: 2, produto: "Compressor de Ar", status: "Pendente" },
+  { id: 3, produto: "Esteira Transportadora", status: "Concluído" },
+  { id: 4, produto: "Bomba Hidráulica", status: "Em andamento" },
+  { id: 5, produto: "Gerador Diesel", status: "Pendente" },
+  { id: 6, produto: "Torno Mecânico", status: "Concluído" },
+];
