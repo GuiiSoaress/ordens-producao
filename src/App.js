@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// importa os dados de (./data/ordens.js - ordensDeProducao) e o componente
+// visual OrdemCard de ./components/OrdemCard.js
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+// Renderizar todos os items da lista usando map()
+//Usa a prop key={ordem.id} para ajudar o  React a identificar 
+//os elementos renderizados
+
+//importar o array de ordens de producao
+import {ordensDeProducao} from "./data/ordens";
+
+//importar o compontente OrdemCard
+import OrdemCard from "./components/OrdemCard";
+
+//define o componente principal do aplicativo
+function App(){
+  return(
+    <div style={{padding: "32px"}}>
+      <h1>Painel de Ordens de Procução</h1>
+      {ordensDeProducao.map(ordem =>{
+        <OrdemCard key={ordem.id} ordem={ordem}/>
+      })}
     </div>
   );
-}
+};
 
 export default App;

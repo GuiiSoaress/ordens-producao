@@ -2,7 +2,7 @@
 //que é um array de objetos
 //cada objeto representa uma ordem com id, nome do produto e seu status
 
-export const ordensDeProdução = [
+export const ordensDeProducao = [
   { id: 1, produto: "Motor Elétrico", status: "Em andamento" },
   { id: 2, produto: "Compressor de Ar", status: "Pendente" },
   { id: 3, produto: "Esteira Transportadora", status: "Concluído" },
