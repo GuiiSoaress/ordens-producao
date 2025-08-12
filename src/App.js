@@ -16,9 +16,9 @@ function App(){
   return(
     <div style={{padding: "32px"}}>
       <h1>Painel de Ordens de Procução</h1>
-      {ordensDeProducao.map(ordem =>{
+      {ordensDeProducao.map(ordem =>(
         <OrdemCard key={ordem.id} ordem={ordem}/>
-      })}
+      ))}
     </div>
   );
 };
